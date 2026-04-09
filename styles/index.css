@@ -76,3 +76,16 @@ body {
   right: 80px;
   color: #6f6f6f;
 }
+.content {
+  background-color: #ffd6c5;
+  background-image: url(background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.form__input {
+  border-radius: 4px;
+}
+.form__content-button {
+  border-radius: 4px;
+}

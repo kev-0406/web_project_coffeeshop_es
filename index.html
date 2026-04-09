@@ -57,7 +57,68 @@
         </p>
       </div>
     </header>
-    <main class="content"></main>
+    <main class="content">
+      <h1>Reservar una mesa</h1>
+      <form method="POST" action="">
+        <fieldset>
+          <label class="form__content" for="nombre">Nombre</label>
+          <input
+            class="form__input"
+            type="text"
+            id="nombre"
+            value="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <label class="form__content" for="comensales"
+            >Número de comensales</label
+          >
+          <input
+            class="form__input"
+            type="number"
+            min="1"
+            max="8"
+            id="comensales"
+            placeholder="1-8"
+            required
+          />
+          <label class="form__content" for="FechayHora">Fecha y hora</label>
+          <input
+            class="form__input"
+            type="datetime-local"
+            id="FechayHora"
+            required
+          />
+          <label class="form__content" for="correo"
+            >Tu correo electronico</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="correo"
+            placeholder="@email@email.com"
+            required
+          />
+        </fieldset>
+        <div class="form__button">
+          <button class="form__content-button" type="submit">
+            Reservar una mesa
+          </button>
+        </div>
+        <div class="form__item">
+          <label class="form__content" for="terminos">
+            <input
+              class="form__content"
+              type="checkbox"
+              id="terminos"
+              name="agreement"
+              required
+            />
+            Acepto los términos de uso</label
+          >
+        </div>
+      </form>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
