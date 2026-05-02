@@ -14,17 +14,12 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="icon" href="./favicon.ico" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <img
         class="header__logo"
         src="./img/logo_coffeeshop_dark.svg"
         alt="Logotipo de Ten Espresso"
-      />
-      <img
-        class="header__image"
-        src="./img/inside_coffee_shop.png"
-        alt="Imagen de cafeteria"
       />
       <nav class="nav">
         <ul class="nav__list">
@@ -36,14 +31,23 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">
-        <span class="header__accent">Café de especialidad</span><br />en Triple
-        Peaks
-      </h1>
-      <p class="header__description">
-        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-        para darte energía y motivar tu creatividad.
-      </p>
+      <div class="header__main">
+        <div class="header__text">
+          <h1 class="header__title">
+            <span class="header__accent">Café de especialidad</span><br />en
+            Triple Peaks
+          </h1>
+          <p class="header__description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+            para darte energía y motivar tu creatividad.
+          </p>
+        </div>
+        <img
+          class="header__image"
+          src="./img/inside_coffee_shop.png"
+          alt="Imagen de cafeteria"
+        />
+      </div>
       <div class="header__info">
         <div class="header__hours">
           <p class="header__info-text">Horario:</p>

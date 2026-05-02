@@ -1,5 +1,5 @@
-body {
-  min-width: 1100px;
+.body {
+  margin: auto;
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
@@ -249,4 +249,153 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    height: auto;
+    padding: 20px;
+  }
+
+  .header__logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .nav__list {
+    position: static;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .header__image {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .header__title {
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .header__accent {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .header__description {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header__info {
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content {
+    padding: 60px 20px;
+  }
+
+  .content__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer__top-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__social-container {
+    align-items: flex-start;
+  }
+
+  .footer__circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+  }
+  .header__title,
+  .header__description {
+    margin-left: 0;
+  }
+  .header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__text {
+    max-width: 50%;
+  }
+
+  .header__image {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 45%;
+  }
+
+  .header__title {
+    font-size: 42px;
+    line-height: 48px;
+    margin-left: 40px;
+  }
+  .header__accent {
+    font-size: 42px;
+  }
+  .header__description {
+    margin-left: 40px;
+  }
+  .nav__list {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .header__info {
+    position: static;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 40px;
+    right: 40px;
+  }
+  .content__title {
+    font-size: 36px;
+  }
+
+  .content {
+    padding: 80px 40px;
+  }
+
+  .footer {
+    padding: 60px 40px;
+  }
+
+  .footer__top-row {
+    gap: 40px;
+  }
 }
